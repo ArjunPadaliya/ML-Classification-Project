@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <title>San Framscisco Crime Classification</title>
+  </head>
+  <body>
+
+{% from "_formhelpers.html" import render_field %}
+<form method=post action="/results">
+    <dl>
+	     {{ render_field(form.longitude, cols='10', rows='1') }}
+    </dl>
+    <dl>
+	     {{ render_field(form.latitude, cols='10', rows='1') }}
+    </dl>
+    <dl>
+	     {{ render_field(form.dayOfWeek, cols='10', rows='1') }}
+    </dl>
+    <dl>
+	     {{ render_field(form.address, cols='20', rows='2') }}
+    </dl>
+  <div>
+	  <input type=submit value='Submit review' name='submit_btn'>
+  </div>
+</form>
+
+  </body>
+</html>

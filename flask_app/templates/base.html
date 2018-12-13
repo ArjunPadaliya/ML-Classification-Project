@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Crime Classification</title>
+  </head>
+  <style>
+    input[type=text], input[type=number],select {
+      width: 100%;
+      padding: 5px 8px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    input[type=submit] {
+      width: 100%;
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+
+    div {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 5px;
+      width: 50%;
+      margin: auto;
+    }
+
+</style>
+  <body>
+    <div class="container">
+    <div class="menu">
+    <center><h1 id="logo">San Franscisco Crime Classification</h1></center>
+    </div>
+      {% block content %}
+      {% endblock %}
+    </div>
+  </body>
+</html>
